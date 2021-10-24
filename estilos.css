@@ -1,0 +1,244 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "DIRECTV Curve";
+}
+
+
+body {
+    background: #172437;
+    color: #ffffff;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 125px;
+}
+
+.in-flex {
+    flex: 1;
+    padding: 25px;
+    min-width: 250px;
+}
+
+.in-flex: first-child {
+    flex: 2;
+}
+
+.in-flex div {
+    margin: 20px;
+}
+
+
+
+
+
+
+header {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    background: linear-gradient(#172437,#172437, rgba(13, 39, 55, 0.75),rgba(13, 39, 55, 0));
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: auto;
+    height: 150px
+}
+
+.logotipo {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 35px;
+    text-align: center;
+    position: center;
+}
+
+.suscribite {
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    font-size: 35px;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.form {
+    text-align: center;
+    width: 50% auto;
+    border: 1px solid #ccc;
+    margin-top: 3%;
+    padding: 2.5%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+}
+
+.complete {
+    text-align: center;
+    color: #000;
+    font-size: 19px;
+}
+
+.telefono {
+    color: #000;
+    text-align: left;
+    margin-left: 5px; 
+    font-size: 17px;
+}
+
+.hbo {
+    color: #fff;
+    text-align: center;
+    font-size: 41px;
+    text-shadow: 0px 0px 4px #000;
+    font-family: "DIRECTV Curve";
+    src:url("fuentes/directv_curve_regular.ttf");
+}
+
+.contrata {
+    text-align: center;
+    text-shadow: 0px 0px 4px #000;
+    color: #fff;
+    font-size: 29px;
+}
+
+.promo {
+    color: #fff;
+    text-align: center;
+    font-size: 41px;
+    text-shadow: 0px 0px 4px #000;
+    font-family: "DIRECTV Curve";
+    src:url("fuentes/directv_curve_regular.ttf");
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+    color: #50535a;
+}
+
+input, select, button {    
+    color: #50535a;
+    text-align: center;
+    margin-bottom: 4%;
+    width: 98.5%;
+    padding: 3.5%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    border-radius: 10px;
+    font-family: "DIRECTV Curve";
+    src:url("fuentes/directv_curve_medium.ttf");
+}
+
+input:focus, select:focus {
+    border: 1.3px solid #172437;
+}
+
+input[type="submit"] {
+    margin-top: 2%;
+    margin-bottom: 0;
+    background: #172437;
+    color:#fff;
+    border:none;
+    font-size: 22px;
+}
+
+input[type="submit"]:hover {
+     background: #eb8516;
+     cursor:pointer;
+}
+
+button {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 0;
+    background: #eb8516;
+    color:#fff;
+    border:none;
+    font-size: 22px;
+    font-family: "DIRECTV Curve";
+    src:url("fuentes/directv_curve_bold.ttf");
+}
+
+button:hover {
+     background: #172437;
+     color: #04b1f1;
+     cursor:pointer;
+}
+
+body {
+    background:url(imagenes/w4.jpg) no-repeat fixed top center #172437;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#caja2 {
+    margin: auto;
+}
+
+.final {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*background: #172437;*/
+    text-shadow: 0px 0px 4px #000;
+    color: #fff;
+    font-size: 12px;
+    position: fixed;
+}
+
+
+
+
+
+
+.gracias {
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 7.5px #000;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 72px;
+    font-weight: bolder;
+    line-height: auto;
+    letter-spacing: 0.8px;
+    margin-bottom: 0%;
+}
+
+.asesor {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 7.5px #000;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: auto;
+    letter-spacing: 0.6px;
+}
+
+.body2 {
+    background:url(imagenes/w.jpg) no-repeat fixed top center #f2f2f2;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.home1 {
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    padding-bottom: 20%;
+}

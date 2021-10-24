@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suscribite | DIRECTV</title>
+    <link href="imagenes/favicon.ico" rel="Shortcut Icon" />
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '793765684779209');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=793765684779209&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+<body>
+
+    <header>
+        <div class="logotipo">
+            <img src="imagenes/logo.png" alt="">
+        </div>
+    </header>
+
+<section class="home">
+    <div class="in-flex">
+        <!--caja1a-->
+        <h1 class="suscribite">Suscribite a DIRECTV</h1>
+        
+        <!--caja1b-->
+        <form class="form" id="form" method="post" autocomplete="off" name="google-sheet">
+            <form action="" id="formulario" name="formulario" metodo="get">
+                <p class="complete">Dejanos tu número y nos comunicamos</p>
+                <br>
+                <label for="linea" class="telefono">Teléfono</label>
+                <input type="text" class="form-control" placeholder="Ej: 1128643545" minlength="10" maxlength="10" size="15" name="LINEA-DT" id="linea" required>
+                <br>
+                <button type="submit" class="btn btn-primary" type="button" id="submitButton">
+                    <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    <span id="buttonText">Llamame</span>
+                </button>
+        </form> 
+    </div>
+
+        <!--caja2-->
+    <div class="in-flex" id="caja2">
+        <br><br><br><br>
+        <h3 class="hbo">HBO y FOX Premium GRATIS</h3>        
+        <br><br><br><br>
+        <p class="contrata">Contrata con tarjeta de crédito</p>
+        <h2 class="promo">Promo 40% off por 12 meses</h2>
+        <br><br>
+    </div>
+</section>
+
+<footer class="final">
+    ©2020 AT&T Intellectual Property DIRECTV
+</footer>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw31jLYuPONQGoF-YwYJMcChy89HxqgZYTRG_xTQoLnXT_nXtU/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => redirecinal())
+        .catch(error => console.error('Error!', error.message))
+    })
+
+    function redirecinal(){
+        document.location.href="outdex.html"; 
+    }
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>
